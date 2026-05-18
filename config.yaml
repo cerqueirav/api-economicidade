@@ -1,0 +1,25 @@
+api:
+  demas_base_url: "https://apidadosabertos.saude.gov.br"
+  ibge_base_url: "https://servicodados.ibge.gov.br/api/v1"
+  osrm_base_url: "http://router.project-osrm.org"
+
+  ibge_municipio_suffix_url: "localidades/estados/29/municipios"
+  demas_estabelecimentos_suffix_url: "cnes/estabelecimentos"
+  demas_macrorregiao_suffix_url: "macrorregiao-e-regiao-de-saude/municipio"
+  osrm_driving_suffix_url: "route/v1/driving"
+  
+valores_referencia:
+  salvador_base: 11.80
+  multiplicador_ida_volta: 2.0
+  interior_km: 0.10
+  interior_fixo: 8.56
+  interior_co2: 0.192
+
+arquivos:
+  cache_cnes: "cache/cache_demas.json"
+  coluna_email: "Endereço de e-mail"
+  
+processamento:
+  timeout: 30
+  delay: 0.2
+  retries: 3
